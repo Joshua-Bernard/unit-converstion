@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #dce1de;
+  font-family: 'Inter', sans-serif;
+}
+
+.card,
+header,
+main,
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.card {
+  min-height: 75vh;
+  min-width: 40vw;
+}
+
+header {
+  background-color: #a0eec0;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #0c0f0a;
+}
+
+#value {
+  text-align: center;
+  font-size: 3.625rem;
+  background-color: unset;
+  border: 2px solid #567f65;
+  border-radius: 10px;
+  width: 90px;
+  padding: 0px 10px;
+}
+
+.button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #86AC94;
+  border: none;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  margin-bottom: 10px;
+}
+button:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6);
+}
+/* #value:focus {
+  outline: none;
+  background-color: #97edbb;
+} */
+
+/* Remove default increment arrows */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+main {
+  flex-grow: 2;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: #f2f8f4;
+}
