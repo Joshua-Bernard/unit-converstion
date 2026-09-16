@@ -3,6 +3,8 @@
 
 <head>
     <meta charset='UTF-8'>
+    <meta name='description'
+        content='A unit conversion tool to convert values from Metric to Imperial or Imperial to Metric'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +20,10 @@
     <div class="card">
         <header>
             <h1>Metric/Imperial Unit Conversion</h1>
-            <input type='number' id='value' value='1'>
+            <form>
+                <label for='value'>Value</label>
+                <input type='number' id='value' value='1'>
+            </form>
             <button class='button' id='button'>Convert</button>
         </header>
         <main>

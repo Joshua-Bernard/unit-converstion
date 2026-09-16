@@ -75,3 +75,8 @@ main {
   justify-content: space-evenly;
   background-color: #f2f8f4;
 }
+
+label{
+  text-align: center;
+  display: block;
+}
